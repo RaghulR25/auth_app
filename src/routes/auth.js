@@ -6,10 +6,7 @@ import { verifyToken } from '../middleware/auth.js';
 
 const router = Router();
 
-/**
- * POST /api/auth/register
- * Body: { username, email, password }
- */
+
 router.post(
   '/register',
   [
@@ -20,10 +17,7 @@ router.post(
   register
 );
 
-/**
- * POST /api/auth/login
- * Body: { email, password }
- */
+
 router.post(
   '/login',
   [
